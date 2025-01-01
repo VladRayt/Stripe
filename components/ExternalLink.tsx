@@ -5,10 +5,10 @@ import { Platform } from 'react-native';
 
 type Props = Omit<ComponentProps<typeof Link>, 'href'> & { href: string };
 
-export function ExternalLink({ href, ...rest }: Props) {
+export function ExternalLink({ href, ...rest }: Props): JSX.Element {
   return (
     <Link
-      target="_blank"
+      target='_blank'
       {...rest}
       href={href}
       onPress={async (event) => {
