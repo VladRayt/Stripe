@@ -2,6 +2,8 @@
 
 # dependencies
 node_modules/
+.pnp
+.pnp.js
 
 # Expo
 .expo/
@@ -16,6 +18,10 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
+*.app-bundle
+*.aab
+*.apk
+*.ipa
 
 # Metro
 .metro-health-check*
@@ -24,15 +30,57 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
 
 # macOS
 .DS_Store
 *.pem
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.history/
+*.sublime-project
+*.sublime-workspace
 
 # local env files
+.env
 .env*.local
+.env.development
+.env.test
+.env.production
 
 # typescript
 *.tsbuildinfo
 
+# testing
+/coverage
+.jest/
+
+# misc
+.tmp/
+.temp/
+*.bak
 app-example
+
+# Fastlane
+/android/fastlane/report.xml
+/ios/fastlane/report.xml
+*.dSYM.zip
+*.mobileprovision
+
+# iOS
+/ios/Pods/
+/ios/build/
+/ios/*.xcarchive
+
+# Android
+/android/app/debug
+/android/app/release
+/android/build/
+/android/local.properties
+/android/.gradle/

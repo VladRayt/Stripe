@@ -39,6 +39,9 @@ export default [
 
       // TypeScript
       '@typescript-eslint/no-explicit-any': 'error',
+      '@typescript-eslint/dot-notation': 'off',
+      '@typescript-eslint/no-string-literal': 'off',
+      '@typescript-eslint/prefer-string-starts-ends-with': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         {

@@ -40,7 +40,8 @@
     "**/*.ts", // Включає всі TypeScript файли
     "**/*.tsx", // Включає всі TypeScript React файли
     ".expo/types/**/*.ts", // Включає типи Expo
-    "expo-env.d.ts" // Включає визначення середовища Expo
+    "expo-env.d.ts", // Включає визначення середовища Expo
+    "types/env.d.ts"
   ],
   "exclude": [
     "node_modules", // Виключає node_modules з компіляції
