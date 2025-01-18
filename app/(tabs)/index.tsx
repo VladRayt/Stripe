@@ -4,8 +4,10 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { BuggyComponent } from '@/components/BuggyComponent';
 
 export default function HomeScreen(): React.ReactNode {
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -53,6 +55,10 @@ export default function HomeScreen(): React.ReactNode {
           <ThemedText type='defaultSemiBold'>app</ThemedText> to{' '}
           <ThemedText type='defaultSemiBold'>app-example</ThemedText>.
         </ThemedText>
+      </ThemedView>
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type='subtitle'>Тест Error Boundary</ThemedText>
+        <BuggyComponent />
       </ThemedView>
     </ParallaxScrollView>
   );

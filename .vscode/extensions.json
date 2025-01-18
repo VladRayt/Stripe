@@ -1,3 +1,18 @@
 {
-  "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",              // ESLint
+    "esbenp.prettier-vscode",              // Prettier
+    "formulahendry.auto-rename-tag",       // Автоматичне перейменування парних тегів
+    "naumovs.color-highlight",             // Підсвічування кольорів
+    "dsznajder.es7-react-js-snippets",     // Сніпети для React
+    "quicktype.quicktype",                 // Генерація типів з JSON
+    "christian-kohler.path-intellisense",  // Автодоповнення шляхів
+    "christian-kohler.npm-intellisense",   // Автодоповнення npm модулів
+    "ms-vsliveshare.vsliveshare",         // Live Share для парного програмування
+    "wix.vscode-import-cost",              // Показує розмір імпортованих пакетів
+    "eamodio.gitlens",                     // Розширені можливості Git
+    "yoavbls.pretty-ts-errors",            // Кращі повідомлення про помилки TypeScript
+    "rvest.vs-code-prettier-eslint",       // Інтеграція Prettier з ESLint
+    "expo.vscode-expo-tools"               // Інструменти для Expo
+  ]
 }

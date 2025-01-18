@@ -8,7 +8,10 @@
     "esModuleInterop": true, // Покращена сумісність між CommonJS та ES модулями
     "isolatedModules": true, // Кожен файл можна безпечно транспілювати окремо
     "jsx": "react-native", // Підтримка JSX для React Native
-    "lib": ["es2017", "dom"], // Включає визначення типів для ES2017 і DOM API
+    "lib": [
+      "es2017",
+      "dom"
+    ], // Включає визначення типів для ES2017 і DOM API
     "moduleResolution": "node", // Використовує Node.js стратегію резолву модулів
     "noEmit": true, // Не генерує вихідні файли (потрібно для Expo)
     "resolveJsonModule": true, // Дозволяє імпортувати .json файли
@@ -16,7 +19,9 @@
     "target": "esnext", // Компілює у найновішу версію JavaScript
     // Налаштування шляхів
     "paths": {
-      "@/*": ["./*"] // Дозволяє використовувати @ як аліас для кореневої папки
+      "@/*": [
+        "./*"
+      ] // Дозволяє використовувати @ як аліас для кореневої папки
     },
     // Строгі налаштування перевірки типів
     "noImplicitAny": true, // Забороняє неявне використання типу any
@@ -40,13 +45,14 @@
     "**/*.ts", // Включає всі TypeScript файли
     "**/*.tsx", // Включає всі TypeScript React файли
     ".expo/types/**/*.ts", // Включає типи Expo
+    "types/**/*.d.ts", // Включає визначення типів
     "expo-env.d.ts", // Включає визначення середовища Expo
     "types/env.d.ts"
   ],
   "exclude": [
     "node_modules", // Виключає node_modules з компіляції
     "babel.config.js", // Виключає конфіг Babel
-    "metro.config.js", // Виключає конфіг Metro
+    "metro.config.cjs", // Виключає конфіг Metro
     "jest.config.js" // Виключає конфіг Jest
   ]
 }
