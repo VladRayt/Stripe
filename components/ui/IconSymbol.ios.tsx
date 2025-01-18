@@ -13,12 +13,12 @@ export function IconSymbol({
   color: string;
   style?: StyleProp<ViewStyle>;
   weight?: SymbolWeight;
-}) {
+}): JSX.Element {
   return (
     <SymbolView
       weight={weight}
       tintColor={color}
-      resizeMode="scaleAspectFit"
+      resizeMode='scaleAspectFit'
       name={name}
       style={[
         {
